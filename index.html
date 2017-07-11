@@ -1,0 +1,56 @@
+<!DOCTYPE html/>
+<html lang="pl">
+<head>
+ <link id="stylesheet" rel="stylesheet" href="style.css" type="text/css">
+    <meta charset="utf-8" />
+	    <title>Ankieter</title>
+
+			
+			<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/pie.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+			    <script src="game.js"></script>
+</head>
+<body>
+<div id="pojemnik">
+  <div id="nav">
+    <div class="dropdown">
+      <button class="dropbtn">PLIK</button>
+      <div class="dropdown-content">
+        <a onclick="addSurvey()" href="#">Dodaj ankiete</a>
+		<a onclick="editSurvey()" href="#">Edytuj ankietę</a>
+        <a onclick="showHelp()" href="#">Pomoc</a>
+        <a onclick="showInfo()" href="#">O programie</a>
+      </div>
+	      </div>
+	      <div class="dropdown">
+      <button class="dropbtn" onclick="showMenu()">Menu</button>
+      </div>
+
+  </div>
+
+  <div id="left">
+<button onclick="showOrHide()" class ="showhide">Pokaż ankiety</button>
+    <div id="listofsurveys"></div>
+  </div>
+
+
+  <div id="middle">
+    <div class="buttons">
+
+      <p id="p0"></p>
+      <p id="p1"></p>
+      <p id="p2"></p>
+      <p id="p3"></p>
+
+    </div>
+  </div>
+  <div style="clear:both;"></div>
+
+</div>
+</div>
+</body>
+
+</html>
